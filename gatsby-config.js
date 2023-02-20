@@ -14,7 +14,7 @@ module.exports = {
     title: `M.K`,
     description: `2020年から2023年までの制作実績サイトです。`,
     author: `Mai Kotou`,
-    image: `./src/images/powerGirl.png`,
+    image: `/src/images/powerGirl.png`,
     user: { name: 'M.kotou', email: 'm.kotou0715@gmail.com' },
   },
   plugins: [
