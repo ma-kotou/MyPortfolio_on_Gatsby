@@ -31,7 +31,7 @@ return (
         </TextArea>
       </ContentWrap>
       <StaticImage
-        src="../images/mv01.jpg"/>
+        src="../images/mv01.JPG"/>
     </MainView>
   )
 }

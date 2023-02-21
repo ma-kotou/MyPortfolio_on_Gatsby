@@ -55,22 +55,22 @@ const Skill = () => {
               )
             })}
             <ImageWrap>
-              <StaticImage src="../images/html.png" width={100}/>
-              <StaticImage src="../images/css.png" width={100} />
-              <StaticImage src="../images/js.png" width={120} />
-              <StaticImage src="../images/ts.png" width={120} />
-              <StaticImage src="../images/github-mark.png" width={120} />
-              <StaticImage src="../images/php.png" width={150}/>
-              <StaticImage src="../images/react.png" width={120} />
-              <StaticImage src="../images/next.png" width={150} />
-              <StaticImage src="../images/python.png" width={150}/>
-              <StaticImage src="../images/wp.png" width={160}/>
-              <StaticImage src="../images/gatsby.png" width={160}/>
-              <StaticImage src="../images/node.png" width={160} />
-              <StaticImage src="../images/npm.png" width={160} />
-              <StaticImage src="../images/webpack.png" />
-              <StaticImage src="../images/docker.png" />
-              <StaticImage src="../images/sass.jpg" />
+              <StaticImage src="../images/html.PNG" width={100}/>
+              <StaticImage src="../images/css.PNG" width={100} />
+              <StaticImage src="../images/js.PNG" width={120} />
+              <StaticImage src="../images/ts.PNG" width={120} />
+              <StaticImage src="../images/github-mark.PNG" width={120} />
+              <StaticImage src="../images/php.PNG" width={150}/>
+              <StaticImage src="../images/react.PNG" width={120} />
+              <StaticImage src="../images/next.PNG" width={150} />
+              <StaticImage src="../images/python.PNG" width={150}/>
+              <StaticImage src="../images/wp.PNG" width={160}/>
+              <StaticImage src="../images/gatsby.PNG" width={160}/>
+              <StaticImage src="../images/node.PNG" width={160} />
+              <StaticImage src="../images/npm.PNG" width={160} />
+              <StaticImage src="../images/webpack.PNG" />
+              <StaticImage src="../images/docker.PNG" />
+              <StaticImage src="../images/sass.JPG" />
             </ImageWrap>
             <p>※ BEM,FLOCSS,EJS,Emotionも出来ます。TS,pythonは勉強中です。</p>
           </SubSection>
@@ -96,10 +96,10 @@ const Skill = () => {
               )
             })}
             <ImageWrap>
-              <StaticImage src="../images/figma.png" width={250}/>
-              <StaticImage src="../images/ps.png" width={150}/>
-              <StaticImage src="../images/ai.png" width={150}/>
-              <StaticImage src="../images/xd.png" width={150}/>
+              <StaticImage src="../images/figma.PNG" width={250}/>
+              <StaticImage src="../images/ps.PNG" width={150}/>
+              <StaticImage src="../images/ai.PNG" width={150}/>
+              <StaticImage src="../images/xd.PNG" width={150}/>
             </ImageWrap>
           </SubSection>
         </Section>
