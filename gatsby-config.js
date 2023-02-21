@@ -57,7 +57,7 @@ module.exports = {
     resolve: `gatsby-plugin-manifest`,
     options:{
       start_url: '/',
-      icon: `./src/images/powerGirl.png`,
+      icon: `${__dirname}/src/images/powerGirl.png`,
       }
     },
     `gatsby-plugin-emotion`,
