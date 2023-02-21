@@ -53,6 +53,14 @@ module.exports = {
         ],
       },
     },
+    {
+    resolve: `gatsby-plugin-manifest`,
+    options:{
+      start_url: '/',
+      icon: `${__dirname}/src/images/powerGirl.png`,
+      }
+    },
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-gatsby-cloud`,
   ],
 };
