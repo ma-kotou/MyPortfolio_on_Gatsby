@@ -8,9 +8,17 @@ gatsbyでmarkdownファイルからページを生成します。
 
 
 # deploy
+製品版をbuildします。
+```
+gatsby build
+```
+
 functionsディレクトリを利用して、basic認証を設定しているので変更ときは
 publicディレクトリの中身をfunctionsに全て移動して以下を実行
+```
 firebase deploy
+```
+
 # スタイルについて
 Emotionを入れています。
 

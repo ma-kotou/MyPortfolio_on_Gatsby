@@ -26,7 +26,6 @@ const SideContainer = styled.div`
   left: 0;
   width: 80px;
   height: calc(100% - 34px);
-  min-height: calc(100vw - 34px);
   border-right: 1px solid ${val.lightGray};
   color: ${val.black};
   .gatsby-image-wrapper{

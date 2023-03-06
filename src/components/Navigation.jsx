@@ -22,7 +22,6 @@ import { val } from '../components/variable.js';
 
 const Nav = styled.ul`
   box-sizing: border-box;
-  margin-bottom: 200px;
   text-align: right;
 `
 const Item = styled.li`

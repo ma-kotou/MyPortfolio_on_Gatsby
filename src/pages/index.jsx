@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import Seo from "../components/seo"
 import { navigate } from 'gatsby'
 import {val} from "../components/variable"
+import Particles from "../components/Particle"
 
 
   setTimeout(() => {
@@ -14,6 +15,7 @@ const indexPage = () => {
 
   return (
         <Wrap>
+          <Particles/>
           <H1
             initial={{width: 0, opacity: 0}}
             animate={{width: "100%", opacity: 1}}
@@ -24,13 +26,6 @@ const indexPage = () => {
             exit={{opacity:0}}
             >
             Portfolio</H1>
-          <H2
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{
-              opacity: { ease: "linear",duration: 5}
-            }}
-          >Mai Kotou</H2>
         </Wrap>
     );
 };

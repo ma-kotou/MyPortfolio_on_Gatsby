@@ -1,11 +1,9 @@
-import React, {useState} from 'react'
-import { graphql, Link, useStaticQuery } from 'gatsby'
+import React from 'react'
 import styled from '@emotion/styled'
 import { val } from './variable.js'
-import { motion } from "framer-motion"
-import Navigation from "./Navigation"
+import { motion } from 'framer-motion'
+import Navigation from './Navigation'
 import { StaticImage } from 'gatsby-plugin-image'
-import Number from "./Numbar"
 
 const Mv = () => {
 return (
@@ -39,6 +37,7 @@ return (
 const MainView = styled(motion.section)`
   width: calc(100% - 200px);
   height: calc(100vw - 34px);
+  max-height: 100vh;
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -46,36 +45,8 @@ const MainView = styled(motion.section)`
   .gatsby-image-wrapper-constrained{
     max-width: 50%;
   }
-`
-
-const Switch = styled.div`
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate( -60%, -50% );
-  z-index: 10;
-`
-const LeftButton = styled.button`
-  width : 40px;
-  height : 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: ${val.darkGray};
   img{
-    width: 60%;
-  }
-`
-const RightButton = styled.button`
-  width : 40px;
-  height : 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotate(180deg);
-  background: ${val.black};
-  img{
-    width: 60%;
+    object-fit: cover;
   }
 `
 
@@ -84,6 +55,7 @@ const ContentWrap = styled.div`
 `
 
 const TextArea = styled(motion.div)`
+  max-width: 640px;
   white-space: nowrap;
   padding: 0 24px;
   text-align: left;
@@ -95,7 +67,7 @@ const Text = styled.p`
   padding-right: 56px;
   white-space: pre-line;
   line-height: 2em;
-  font-size: ${val.s20};
+  font-size: ${val.s16};
   margin-bottom: 56px;
 `
 
