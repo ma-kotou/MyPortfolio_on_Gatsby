@@ -1,12 +1,10 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import Seo from "../components/seo"
 import { motion } from "framer-motion"
 import styled from '@emotion/styled'
-import { val } from '../components/variable.js'
-import Title from "../components/Title"
+import { val } from './variable.js'
+import Title from "./Title"
 import { StaticImage } from 'gatsby-plugin-image'
-import Container from '../components/Container'
+import Container from './Container'
 
 const Skill = () => {
   const frontendTexts = ([
@@ -23,8 +21,7 @@ const Skill = () => {
   ])
 
   return (
-      <Layout>
-        <Container>
+        <Container id="skill">
         <Title text="Skill"/>
         <Section
           initial={{opacity:0}}
@@ -104,7 +101,6 @@ const Skill = () => {
           </SubSection>
         </Section>
         </Container>
-      </Layout>
   );
 };
 
@@ -154,13 +150,5 @@ const ImageWrap = styled.div`
     padding-right: 2rem;
   }
 `
-
-export const Head = () => {
-  return (
-    <Seo
-      title= "portfolio| Skill"
-    />
-  )
-}
 
 export default Skill;

@@ -2,9 +2,10 @@ import React, {useState} from 'react'
 import Footer from './Footer'
 import { sanitize } from 'sanitize.css'
 import { Global, css } from '@emotion/react'
-import { val } from './variable.js';
-import Sidebar from './Sidebar';
-import MenuBtn from './MenuBtn';
+import { val } from './variable.js'
+//import Sidebar from './Sidebar'
+import MenuBtn from './MenuBtn'
+import Header from './Header'
 
 
 const Layout = ({ children }) => {
@@ -13,7 +14,7 @@ const Layout = ({ children }) => {
     <>
       <Global styles={styles} />
         <main>
-          <Sidebar />
+          <Header/>
           <MenuBtn/>
           {children}
         </main>

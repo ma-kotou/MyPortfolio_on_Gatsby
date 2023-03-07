@@ -1,16 +1,15 @@
 import * as React from 'react';
-import Layout from '../components/layout';
-import Seo from "../components/seo"
+import Layout from './layout';
+import Seo from "./seo"
 import { motion } from "framer-motion"
 import styled from '@emotion/styled';
-import { val } from '../components/variable.js';
-import Title from "../components/Title"
-import Container from '../components/Container'
+import { val } from './variable.js';
+import Title from "./Title"
+import Container from './Container'
 
 const History = () => {
 
   return (
-      <Layout>
         <Container>
         <Title text="History"/>
         <Section
@@ -103,7 +102,6 @@ const History = () => {
         </Block>
         </Section>
         </Container>
-      </Layout>
   );
 };
 

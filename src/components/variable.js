@@ -8,6 +8,7 @@ export const val = {
   white: '#f4f4f4',
   yellow: '#FFD561',
   mint: '#4FB2C0',
+  red: '#B61A24',
 
 
 /* fontSize margin padding */

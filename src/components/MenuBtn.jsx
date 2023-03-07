@@ -12,13 +12,13 @@ const MenuBtn = () => {
       width={600}>
       <ul>
         <Item>
-          <AniLink paintDrip hex="#4FB2C0" component={Link} to="/works">works</AniLink>
+          <a href="./#works">skill</a>
         </Item>
         <Item>
-          <AniLink paintDrip hex="#4FB2C0" component={Link} to="/skill">skill</AniLink>
+          <a href="./#works">works</a>
         </Item>
         <Item>
-          <AniLink paintDrip hex="#4FB2C0" component={Link} to="/history">history</AniLink>
+          <AniLink paintDrip hex="#4FB2C0" component={Link} to="#history">history</AniLink>
         </Item>
       </ul>
     </Menu>
