@@ -29,11 +29,14 @@ const BlogPostTemplate = ({ data, children }) => {
 
   return (
     <Layout>
+      <Wrap>
+        <GoToSite>Go To Site</GoToSite>
         <HeroImage initial={true} animate={{scale: 1}} transition={{ duration: 1 }}>
           <Link to={data.mdx.frontmatter.url} target="_blank" rel="noopener noreferrer">
-          <GatsbyImage image={image} alt="Hero Image" width="1080"/>
+            <GatsbyImage image={image} alt="Hero Image" width="1080"/>
           </Link>
         </HeroImage>
+      </Wrap>
         <Section>
           <H2
             layout initial={{width:"0", opacity:0}}
@@ -139,10 +142,19 @@ const BlogPostTemplate = ({ data, children }) => {
 const Div = styled.section`
   width: calc(100% - 80px);
 `
+const Wrap = styled.div`
+    position: relative;
+    padding: ${val.s88} 0 0;
+    &:hover{
+        span{
+          opacity: 1;
+        }
+    }
+
+`
 const HeroImage = styled(motion.section)`
       max-width: 1080px;
       margin: 0 auto;
-      padding: ${val.s120} 0 0;
       height: fit-content;
       transform: scale(0.5);
       transition: 2s;
@@ -153,6 +165,19 @@ const HeroImage = styled(motion.section)`
         box-shadow: ${val.shadow};
       }
     `
+
+const GoToSite = styled.span`
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-55%,-50%);
+  z-index: 999;
+  font-size: ${val.s24};
+  letter-spacing: .3em;
+  color: #fff;
+  transition: 3s;
+  opacity: 0;
+`
 
 const H2 = styled(motion.h2)`
   font-size: ${val.s32};
@@ -199,7 +224,7 @@ const Section = styled.section`
   line-height: 2;
 `
 const SectionTitle = styled.h3`
-  font-size: ${val.s56};
+  font-size: 2rem;
   margin-bottom: 1rem;
   overflow: hidden;
   white-space: nowrap;

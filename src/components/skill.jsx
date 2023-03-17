@@ -21,7 +21,7 @@ const Skill = () => {
   ])
 
   return (
-        <Container id="skill">
+        <Container>
         <Title text="Skill"/>
         <Section
           initial={{opacity:0}}

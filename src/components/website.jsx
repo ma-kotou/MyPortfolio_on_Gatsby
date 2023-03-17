@@ -42,7 +42,7 @@ const Website = () => {
         <Title text="WebSite"/>
         <Inner>
         {data.allMdx.edges.map((edge) => (
-        <AniLink paintDrip hex="#4FB2C0" component={Link} to={`/posts/${edge.node.frontmatter.slug}`}>
+        <AniLink paintDrip hex="#B61A24" component={Link} to={`/posts/${edge.node.frontmatter.slug}`}>
           <Item id={edge.node.frontmatter.slug} initial={{opacity: 0,translateY: 100}} whileInView={{opacity: 1, translateY: 0}} transition={{ duration: 1 }}>
             <div className={edge.node.frontmatter.slug}>
             <GatsbyImage

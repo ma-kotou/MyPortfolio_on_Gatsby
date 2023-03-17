@@ -10,3 +10,13 @@ app.all('/*', basicAuth(function(user, password) {
 app.use(express.static(__dirname + '/dist/'))
 
 exports.app = functions.https.onRequest(app)
+
+exports.getAutocompleteResponse = functions
+  .region("asia-northeast1")
+  .runWith({
+    // Keep 5 instances warm for this latency-critical function
+    minInstances: 5,
+  })
+  .https.onCall((data, context) => {
+    // Autocomplete a user's search term
+  });

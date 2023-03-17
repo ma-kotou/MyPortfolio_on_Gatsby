@@ -3,20 +3,18 @@ import Footer from './Footer'
 import { sanitize } from 'sanitize.css'
 import { Global, css } from '@emotion/react'
 import { val } from './variable.js'
-//import Sidebar from './Sidebar'
-import MenuBtn from './MenuBtn'
 import Header from './Header'
+import ScrollDown from './ScrollDown'
 
 
 const Layout = ({ children }) => {
-
   return (
     <>
       <Global styles={styles} />
         <main>
           <Header/>
-          <MenuBtn/>
           {children}
+          <ScrollDown />
         </main>
         <Footer />
     </>
@@ -36,6 +34,7 @@ const styles = css`
   }
   main{
     background: ${val.white};
+    position: relative;
   }
 
   a {
@@ -156,6 +155,11 @@ const styles = css`
   .bm-item li{
     font-size: ${val.s24};
     margin-bottom: ${val.s32};
+  }
+
+  /* Gatsby defaultStyle打ち消し*/
+  .tl-edges{
+    overflow-x: initial!important;
   }
 `
 

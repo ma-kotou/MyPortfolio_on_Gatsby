@@ -14,6 +14,7 @@ const Container = ({children}) => {
 const Section = styled.section`
   width: 1080px;
   margin: 0 auto;
-  padding: 120px 0 120px;
+  padding: 120px 0 88px;
+  position: relative;
 `
 export default Container

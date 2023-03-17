@@ -22,10 +22,11 @@ const Header = () => {
 const Container = styled.header`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: ${val.black};
-  padding: 16px 120px 16px 16px;
+  padding: 0 120px 0 16px;
   box-shadow:${val.shadow};
-  height: 100px;
+  height: 72px;
   .gatsby-image-wrapper{
     width: 32px;
     height: 32px;

@@ -30,6 +30,7 @@
     "gatsby": "^5.3.3",
     "gatsby-cli": "^5.4.0",
     "gatsby-link": "^5.4.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-emotion": "^8.3.0",
     "gatsby-plugin-firebase": "^0.2.0-beta.4",
     "gatsby-plugin-image": "^3.3.2",
@@ -51,8 +52,8 @@
     "react-dom": "^18.1.0",
     "react-icons": "^4.7.1",
     "react-reveal": "^1.2.2",
+    "react-tsparticles": "^1.0.0",
     "sanitize.css": "^13.0.0",
-    "split-type": "^0.3.3",
-    "react-tsparticles": "^1.0.0"
+    "split-type": "^0.3.3"
   }
 }
